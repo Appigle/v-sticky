@@ -6,7 +6,7 @@ export default {
   bind(el, binding) {
     const elStyle = el.style
     const params = binding.value || {}
-    stickyTop = params.stickyTop || 0
+    stickyTop = params.stickyTop || 10
     zIndex = params.zIndex || 1000
 
     elStyle.position = '-webkit-sticky'
@@ -68,7 +68,7 @@ export default {
   update(el, binding) {
     const params = binding.value || {}
     stickyTop = params.stickyTop || 0
-    zIndex = params.zIndex || 0
+    zIndex = params.zIndex || 10
 
     let childStyle = el.firstElementChild.style
     el.style.top = childStyle.top = `${stickyTop}px`
