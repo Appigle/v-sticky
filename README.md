@@ -13,6 +13,10 @@
 npm install vv-sticky
 ```
 
+#### 注意：
++ update 默认z-index为10，而不是0；
++ npm 似乎不管用，直接copy源文件，然后Vue.directive('sticky', '[path].sticky资源文件.js'),使用 **v-sticky** 即可
+
 #### 1.使用场景
 移动端需要滚动吸顶的业务场景
 
@@ -89,7 +93,3 @@ export default {
 
 Copyright (c) 2018-present, Yejunnan (Liu) You
 
-
-
-+ update 默认z-index为10，而不是0；
-+ npm 似乎不管用，直接copy源文件，然后Vue.directive('sticky', '[path].sticky资源文件.js'),使用 **v-sticky** 即可
